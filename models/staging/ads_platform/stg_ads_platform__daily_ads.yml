@@ -13,7 +13,7 @@ models:
           - not_null
 
       - name: surrogate_key
-        description: The surrogate key.
+        description: The surrogate key from combining the date + the campaign id
         data_tests:
           - not_null
           - unique

@@ -4,7 +4,7 @@ models:
     meta:
       priority: high
       owner:
-        - lindsay
+        - katie
     columns:
       - name: user_id
         description: '{{ doc("bingeflix_column_user_id") }}'
@@ -15,59 +15,59 @@ models:
           - unique
 
       - name: created_at
-        description: When the user account was created.
+        description: '{{ doc("bingeflix_column_user_created_at") }}'
         data_tests:
           - not_null
 
       - name: phone_number
-        description: the user's phone number.
+        description: '{{ doc("bingeflix_column_user_phone_number") }}'
         data_tests:
           - not_null
 
       - name: deleted_at
-        description: When the user's account was deleted.
+        description: '{{ doc("bingeflix_column_user_deleted_at") }}'
 
       - name: username
-        description: The username associated with the user.
+        description: '{{ doc("bingeflix_column_username") }}'
         data_tests:
           - not_null
 
       - name: name
-        description: The full name of the user (first and last).
+        description: '{{ doc("bingeflix_column_user_full_name") }}'
         data_tests:
           - not_null
 
       - name: sex
-        description: The user's gender.
+        description: '{{ doc("bingeflix_column_user_sex") }}'
         data_tests:
           - not_null
 
       - name: email
-        description: The user's email address.
+        description: '{{ doc("bingeflix_column_user_email") }}'
         data_tests:
           - not_null
 
       - name: birthdate
-        description: The user's bithdate.
+        description: '{{ doc("bingeflix_column_user_birth_date") }}'
         data_tests:
           - not_null
 
       - name: current_age
-        description: The user's current age.
+        description: The user's current age. Looks at the difference between the current date and the birth date of the user.
         data_tests:
           - not_null
 
       - name: age_at_acquisition
-        description: The age of the user when they became a Bingeflix user.
+        description: The age of the user when they became a Bingeflix user. Looks at the difference between birth date & sign up date. 
         data_tests:
           - not_null
 
       - name: region
-        description: Where the user lives.
+        description: '{{ doc("bingeflix_column_user_region") }}'
         data_tests:
           - not_null
 
       - name: country
-        description: Where the user lives.
+        description: '{{ doc("bingeflix_column_user_country") }}'
         data_tests:
           - not_null
