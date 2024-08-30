@@ -1,6 +1,7 @@
 sources:
   - name: ads_platform
     schema: bingeflix
+    description: Ad platform data for monitoring click through, spend and other key ad conversion points
     database: raw
     tables:
       - name: daily_ads
