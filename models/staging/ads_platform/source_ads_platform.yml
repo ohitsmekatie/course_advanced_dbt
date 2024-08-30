@@ -5,4 +5,5 @@ sources:
     database: raw
     tables:
       - name: daily_ads
+        description: includes key conversion events for ad related data
         identifier: ads
