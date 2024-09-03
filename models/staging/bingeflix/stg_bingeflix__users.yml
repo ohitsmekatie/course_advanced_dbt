@@ -40,7 +40,7 @@ models:
 
       - name: email
         description:  '{{ doc("bingeflix_column_user_email") }}'
-        data_type: string 
+        data_type: string
         data_tests:
           - not_null
 

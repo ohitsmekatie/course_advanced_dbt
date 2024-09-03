@@ -1,14 +1,14 @@
 models:
   - name: fct_events
-    description: This model contains information about Bingeflix behavorial events 
+    description: This model contains information about Bingeflix behavorial events
     meta:
       priority: high
       owner:
         - katie
     columns:
-      - name: session_id 
+      - name: session_id
         description: '{{ doc("bingeflix_column_event_session_id") }}'
-      
+
       - name: event_id
         description: The unique identifier of the event.
         data_tests:
@@ -18,9 +18,8 @@ models:
       - name: created_at
         description: '{{ doc("bingeflix_column_user_created_at") }}'
 
-      - name: user_id 
+      - name: user_id
         description: '{{ doc("bingeflix_column_user_id") }}'
 
-      - name: event_name 
+      - name: event_name
         description: '{{ doc("bingeflix_column_event_name") }}'
-      

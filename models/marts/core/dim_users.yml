@@ -58,7 +58,7 @@ models:
           - not_null
 
       - name: age_at_acquisition
-        description: The age of the user when they became a Bingeflix user. Looks at the difference between birth date & sign up date. 
+        description: The age of the user when they became a Bingeflix user. Looks at the difference between birth date & sign up date.
         data_tests:
           - not_null
 

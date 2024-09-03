@@ -1,5 +1,5 @@
 # Bingeflix Docs
-This file contains doumentation for Bingeflix data sources.
+This file contains documentation for Bingeflix data sources.
 
 ## Users
 This section contains documentation from the Bingeflix Users table.
@@ -13,7 +13,7 @@ The timestamp when the user's account was created.
 {% enddocs %}
 
 {% docs bingeflix_column_user_deleted_at %}
-The timestamp when the user's account was deleted. Will be null if it's still an active account. 
+The timestamp when the user's account was deleted. Will be null if it's still an active account.
 {% enddocs %}
 
 {% docs bingeflix_column_user_full_name %}
@@ -21,7 +21,7 @@ The full name of the user associated with the account.
 {% enddocs %}
 
 {% docs bingeflix_column_username %}
-The username associated with the user's account.
+The username is associated with the user's account.
 {% enddocs %}
 
 {% docs bingeflix_column_user_email %}
@@ -45,11 +45,11 @@ The user's gender at time of birth. Contains values M or F
 {% enddocs %}
 
 {% docs bingeflix_column_user_birth_date %}
-The date of the user's birth. 
+The date of the user's birth.
 {% enddocs %}
 
 
-## Subscriptions 
+## Subscriptions
 This section contains documentation from the Bingeflix Users table which are also used in other Finance models downstream.
 
 {% docs bingeflix_column_subscription_plan_id %}
@@ -72,7 +72,7 @@ The timestamp when the subscription ended. If it is null the subscription is act
 The name of the subscription plan.
 {% enddocs %}
 
-## Events 
+## Events
 
 This section contains documentation from the Bingeflix events table.
 
@@ -88,7 +88,7 @@ The timestamp that the event was logged.
 The name of the event.
 {% enddocs %}
 
-## Dates 
+## Dates
 
 This section contains documentation for commonly used data columns across the data set
 
@@ -128,4 +128,3 @@ The quarter number (between 1 and 4).
 {% docs bingeflix_column_month_number %}
 The month number (between 1 and 12).
 {% enddocs %}
- 
