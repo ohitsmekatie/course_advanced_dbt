@@ -7,8 +7,8 @@ final AS (
         s.user_id,
         s.starts_at,
         s.ends_at,
-        sp.plan_name,
-        sp.pricing,
+        ,sp.plan_name
+        ,sp.pricing
         sp.payment_period AS billing_period
     FROM
         {{ ref('stg_bingeflix__subscriptions') }} AS s
