@@ -17,7 +17,7 @@
 - Columns that should be unique must have a unique schema test.
 
 #### Models
-- The primary key column must have not_null and unique schema tests.
+- The primary key column must have not_null and unique schema tests. The only exception to this rule is if there is no joining done in the final model. In these cases, the unique and non_null tests will be enough. See `fct_events` as an example.
 - All boolean columns must have an accepted_values schema test. The accepted values are true and false.
 - Columns that contain category values must have an accepted_values schema test.
 - Columns that should never be null must have a not_null schema test.
