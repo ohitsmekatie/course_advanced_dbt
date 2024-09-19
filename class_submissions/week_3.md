@@ -26,3 +26,30 @@ WHERE lower({{ column_name }}) LIKE '%test%'
 and applied it to `stg_bingeflix__events` which ran and the new test passed. 
 
 ### Task 3: Write a unit test to verify the logic of a transformation
+
+I used the example from the notes and tested the acquisition age in `dim_users`: 
+
+```
+unit_tests:
+  - name: test_age_is_correct
+    description: test that the user age_at_acquisition is calculated correctly
+    model: dim_users
+    given:
+      - input: ref('stg_bingeflix__users')
+        format: csv
+        rows: |
+          birthdate,created_at
+          1941-10-01,2022-04-11T21:58:19
+      - input: ref('stg_bingeflix__subscriptions')
+        format: csv
+        rows: |
+          user_id,starts_at,subscription_id
+          0,2022-04-11T21:58:19,0
+
+    expect:
+      format: csv
+      rows: |
+        age_at_acquisition
+        80
+```
+
